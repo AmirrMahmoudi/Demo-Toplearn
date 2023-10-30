@@ -1,0 +1,21 @@
+/** HEADER */
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.landing-layer.home-page {
+  background: url("../../src/assets//landing.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 25px 0;
+}
+.title-homepage {
+  width: 58px;
+  transition: all 0.9s ease !important;
+}
