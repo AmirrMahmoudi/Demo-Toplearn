@@ -9,9 +9,88 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "IRANSans";
+  src: url("../public/fonts/FontsFree-Net-ir_sans.ttf") format("ttf");
+}
 
 body {
-  font-family: "Vazir", "tahoma", "Ubuntu" !important;
+  font-family: "Vazir" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* 
+@media screen and (max-width: 991px) {
+  .landing-header h2 {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .landing-header span {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title-homepage {
+    width: 75px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .landing-header h2 {
+    font-size: 18px;
+    width: 280px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  #search-input {
+    height: 30px;
+  }
+  .landing-header span {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landing-search {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #user-rejester {
+    margin-right: auto !important;
+    margin-left: 35px !important;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .headline {
+    display: block;
+  }
+}
+@media screen and (max-width: 560px) {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 22px !important;
+  }
+}
+@media screen and (max-width: 758px) {
+  .headline h2 {
+    font-size: 16px;
+  }
+  .suggested-courses-layer {
+    padding: 0 0 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-body h2 {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .newsletter-form {
+    display: inline-block !important;
+  }
+} */

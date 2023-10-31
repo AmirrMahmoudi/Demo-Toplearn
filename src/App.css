@@ -1,5 +1,5 @@
 .landing-layer.home-page {
   background: url("./assets/landing.jpg") no-repeat center center !important;
-  background-size: cover;
+  background-size: cover !important;
   padding: 25px 0;
 }
