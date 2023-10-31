@@ -118,3 +118,147 @@ span.title {
 .hoverblue:hover {
   color: darkturquoise !important;
 }
+
+/** MAIN  */
+.headBannerImg {
+  width: 40px;
+  height: 40px;
+}
+
+.last-courses-layer header {
+  padding: 70px 0 30px;
+}
+.carousel-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+#main-menu > ul > li > a {
+  display: flex;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 15px 0 22px;
+  color: #1e2f38;
+}
+#main-menu ul .dropdown .dropdown-toggle {
+  transition: all 0.4s;
+}
+#main-menu ul li a:hover,
+#main-menu ul .dropdown .dropdown-toggle:hover {
+  color: #00bffe !important;
+}
+
+#dropdown-menu a p {
+  color: #1e2f38;
+  transition: all 0.3s;
+}
+
+#dropdown-menu {
+  width: 210px;
+}
+
+#dropdown-menu li,
+a {
+  transition: 0.5s;
+  color: #1e2f38;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+#dropdown-menu li:hover,
+#dropdown-menu a p:hover,
+#dropdown-menu a p > span:hover {
+  color: #00bffe;
+}
+#dropdown-menu .dropdown-item {
+  position: relative;
+}
+
+#mobile-dev,
+#web-dev,
+#frontend,
+#database,
+#windows,
+#os,
+#graphic {
+  background-color: #fff;
+  right: 160px;
+  top: -10px;
+  display: none;
+  z-index: 10;
+}
+#dropdown-menu .dropdown-item:hover #mobile-dev,
+#dropdown-menu .dropdown-item:hover #web-dev,
+#dropdown-menu .dropdown-item:hover #frontend,
+#dropdown-menu .dropdown-item:hover #database,
+#dropdown-menu .dropdown-item:hover #windows,
+#dropdown-menu .dropdown-item:hover #os,
+#dropdown-menu .dropdown-item:hover #graphic {
+  display: block;
+}
+
+#fa-circle {
+  font-size: 5px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: auto !important;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 50px;
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+.img-banner {
+  width: 100% !important;
+  height: auto;
+  border-radius: 5px;
+}
+
+.headline h2 {
+  position: relative;
+  font-family: Vazir;
+  font-size: 18px;
+  display: flex;
+  padding-right: 45px;
+  font-weight: 700;
+}
+
+.headline h2:after {
+  width: 32px;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #00bffe;
+  position: absolute;
+  right: 0;
+  top: 9px;
+  content: "";
+}
+.headline h2::before {
+  width: 2000px;
+  height: 5px;
+  border-radius: 25px;
+  background-color: rgb(0, 191, 254, 0.2);
+  position: absolute;
+  right: -1990px;
+  top: 9px;
+  content: "";
+}
+
+.img-layer {
+  width: 100%;
+  display: block;
+  height: 180px !important;
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .col-xs-6 {
+    width: 50% !important;
+  }
+}

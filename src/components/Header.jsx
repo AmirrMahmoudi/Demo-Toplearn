@@ -1,7 +1,6 @@
 import React from "react";
-import MenuHeader from "./Header/MenuHeader";
 import { Container, Row } from "react-bootstrap";
-import MainHeader from "./Header/MainHeader";
+import { MainHeader, MenuHeader } from "./";
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
       <Row className="landing-layer home-page">
         <header>
           <MenuHeader />
-          <MainHeader  />
+          <MainHeader />
         </header>
       </Row>
     </Container>
