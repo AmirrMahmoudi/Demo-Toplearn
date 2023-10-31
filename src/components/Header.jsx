@@ -1,15 +1,16 @@
 import React from "react";
 import MenuHeader from "./Header/MenuHeader";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import MainHeader from "./Header/MainHeader";
+
 const Header = () => {
   return (
     <Container fluid>
       <Row className="landing-layer home-page">
-        <div>
+        <header>
           <MenuHeader />
-        </div>
-
-        {/* <MainHeader /> */}
+          <MainHeader  />
+        </header>
       </Row>
     </Container>
   );

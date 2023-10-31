@@ -12,23 +12,23 @@ const MenuHeader = () => {
             <img src={SITE_LOGO} alt="Logo" className="title-homepage" />
           </NavbarBrand>
           <NavLink className="navbar d-lg-none text-white">
-            <i>
+            <i className="px-2 hoverblue">
               <FaBars />
             </i>
             <small className="custom"></small>
-            <i>
+            <i className="px-2 hoverblue">
               <FaSearch />
             </i>
             <small className="custom"></small>
             <div className="user-area d-flex">
-              <i>
+              <i className="border-start border-end px-2">
                 {" "}
-                <FaUser />
+                <FaRegUser />
               </i>
-              <NavLink> ورود </NavLink>
+              <NavLink className="mx-2 hoverblue"> ورود </NavLink>
               {"  "}
-              <sapn className="user-area-span"> / </sapn>
-              <NavLink> ثبت نام </NavLink>{" "}
+              <sapn className="me-2"> / </sapn>
+              <NavLink className="hoverblue"> ثبت نام </NavLink>{" "}
             </div>
           </NavLink>
           <Nav className="d-none d-lg-flex  " id="nav-header">
@@ -65,10 +65,10 @@ const MenuHeader = () => {
               <i>
                 <FaRegUser />
               </i>
-              <Nav.Item> ورود </Nav.Item>
+              <NavLink className="mx-2 hoverblue"> ورود </NavLink>
               {"  "}
-              <sapn className="user-area-span"> / </sapn>
-              <Nav.Item> ثبت نام </Nav.Item>{" "}
+              <sapn className="me-2"> / </sapn>
+              <NavLink className="hoverblue"> ثبت نام </NavLink>{" "}
             </div>
           </NavLink>
         </Container>
