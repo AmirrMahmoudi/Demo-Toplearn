@@ -24,11 +24,18 @@
     display: block;
   }
 }
+
 @media screen and (min-width: 992px) {
-  .title-homepage {
-    width: 75px;
-  }
-  .landing-header span {
-    font-size: 24px !important;
+    .title-homepage {
+        width: 75px;
+    }
+    .landing-header span {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+  .newsletter-form {
+    display: inline-block !important;
   }
 }
