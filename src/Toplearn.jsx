@@ -1,12 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
-import { Header, Main } from "./components";
+import { Footer, Header, Main } from "./components";
 
 const Toplearn = () => {
   return (
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 };
