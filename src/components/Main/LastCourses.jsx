@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
 import { lastCourses } from "../../database";
-import { LastCourse } from "../";
+import { CourseShow } from "../";
+import { Row } from "react-bootstrap";
 const LastCourses = () => {
   return (
     <section className="last-courses-layer">
@@ -18,7 +19,9 @@ const LastCourses = () => {
           </h3>
         </span>
       </header>
-      <LastCourse courses={lastCourses} />
+      <Row className="justify-content-center">
+        <CourseShow courses={lastCourses} />
+      </Row>
     </section>
   );
 };

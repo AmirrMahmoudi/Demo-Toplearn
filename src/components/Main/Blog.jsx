@@ -7,7 +7,7 @@ import { BiSolidUser } from "react-icons/bi";
 const Blog = ({ article }) => {
   return (
     // <Col xs={11} sm={6} lg={4} className="my-1">
-    <Col className="article-col col-11 col-sm-6 col-lg-4 my-3">
+    <Col key={article.id} className="article-col col-11 col-sm-6 col-lg-4 my-3">
       <article className="mx-1 shadow-sm bg-white rounded-bottom-3">
         <Card.Img
           variant="top"

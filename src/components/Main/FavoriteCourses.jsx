@@ -1,7 +1,7 @@
 import React from "react";
 import { favoriteCourses } from "../../database";
-import FavoriteCourse from "./FavoriteCourse";
 import { Container, Row } from "react-bootstrap";
+import { CourseShow } from "../";
 
 const FavoriteCourses = () => {
   return (
@@ -9,7 +9,9 @@ const FavoriteCourses = () => {
       <header className="headline  d-sm-flex">
         <h2>دوره های محبوب تاپ لرن</h2>
       </header>
-      <FavoriteCourse courses={favoriteCourses} />
+      <Row className="justify-content-center">
+        <CourseShow courses={favoriteCourses} />
+      </Row>
     </Container>
   );
 };

@@ -1,21 +1,26 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-
 import { BsClock, BsFillPersonFill } from "react-icons/bs";
 
-const LastCourse = ({ courses }) => {
+const CourseShow = ({ courses }) => {
   return (
-    <Row className="justify-content-center">
+    <>
       {courses &&
         courses.map((course) => (
-          <Col xs={12} lg={4} xl={3} className="my-3 col-11 col-xs-6">
+            <Col
+            key={course.id}
+            xs={12}
+            lg={4}
+            xl={3}
+            className="my-3 col-11 col-xs-6"
+          >
             <Card className="shadow-sm">
               <Card.Img
                 variant="top"
                 src={course.image}
                 alt={course.title}
                 className="img-layer"
-              />
+                />
               <Card.Body className="py-0 box-shadow">
                 <h2 className="">
                   <a href="#" className="hoverblue card-title-style">
@@ -30,7 +35,7 @@ const LastCourse = ({ courses }) => {
                     <Card.Link
                       href="#"
                       className="text-decoration-none ms-1 card-detail"
-                    >
+                      >
                       {course.teacher}
                     </Card.Link>
                   </div>
@@ -51,9 +56,8 @@ const LastCourse = ({ courses }) => {
             </Card>
           </Col>
         ))}
-    </Row>
-
+        </>
   );
 };
 
-export default LastCourse;
+export default CourseShow;
