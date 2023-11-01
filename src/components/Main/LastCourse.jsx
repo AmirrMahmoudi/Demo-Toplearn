@@ -22,7 +22,6 @@ const LastCourse = ({ courses }) => {
                     {course.title}
                   </a>
                 </h2>
-                {/* <div className="border-bottom mb-3 pb-2"> */}
                 <div className="detail">
                   <div className="top border-bottom   mb-3 pb-3 ">
                     <i className="card-icon ">
@@ -35,7 +34,6 @@ const LastCourse = ({ courses }) => {
                       {course.teacher}
                     </Card.Link>
                   </div>
-
                   <div className="bottom d-flex justify-content-between align-items-center pb-3">
                     <span className="text-time d-flex ">
                       <i className="fs-13 mb-md-1">
@@ -44,9 +42,6 @@ const LastCourse = ({ courses }) => {
                       </i>
                       <small className="ms-2">{course.time}</small>
                     </span>
-                    {/* <div className="text-info"> */}
-                    {/* </div> */}
-
                     <span id="price" className="text-price">
                       {course.price ? course.price + "تومان" : "رایگانـ"}
                     </span>
@@ -58,7 +53,6 @@ const LastCourse = ({ courses }) => {
         ))}
     </Row>
 
-    //    <CourseItem course={course} />
   );
 };
 

@@ -47,12 +47,12 @@ const SuggestedCourses = ({ courses }) => {
           //   onSwiper={(swiper) => console.log(swiper)}
         >
           {courses &&
-            courses.map((suggestedCourse) => {
+            courses.map((course) => {
               return (
                 <SwiperSlide>
                   <SuggestedCourse
-                    suggestedCourse={suggestedCourse}
-                    key={suggestedCourse.id}
+                    course={course}
+                    key={course.id}
                   />
                 </SwiperSlide>
               );

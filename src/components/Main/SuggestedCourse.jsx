@@ -2,21 +2,21 @@ import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { BsClock, BsFillPersonFill } from "react-icons/bs";
 
-const SuggestedCourse = ({ suggestedCourse }) => {
+const SuggestedCourse = ({ course }) => {
   return (
     <Row className="justify-content-center">
       <Col className="col-12">
         <Card className="shadow-sm">
           <Card.Img
             variant="top"
-            src={suggestedCourse.image}
-            alt={suggestedCourse.title}
+            src={course.image}
+            alt={course.title}
             className="img-layer"
           />
           <Card.Body className="py-0">
             <h2 className="mt-3">
               <a href="#" className="hoverblue card-title-style">
-                {suggestedCourse.title}
+                {course.title}
               </a>
             </h2>
             {/* <div className="border-bottom mb-3 pb-2"> */}
@@ -29,7 +29,7 @@ const SuggestedCourse = ({ suggestedCourse }) => {
                   href="#"
                   className="text-muted text-decoration-none ms-2 card-detail"
                 >
-                  {suggestedCourse.teacher}
+                  {course.teacher}
                 </Card.Link>
               </div>
 
@@ -38,14 +38,14 @@ const SuggestedCourse = ({ suggestedCourse }) => {
                   <i className="fs-13 mb-md-1">
                     <BsClock />
                   </i>
-                  <small className="ms-2">{suggestedCourse.time}</small>
+                  <small className="ms-2">{course.time}</small>
                 </span>
                 {/* <div className="text-info"> */}
                 {/* </div> */}
 
                 <span id="price" className="text-price">
-                  {suggestedCourse.price
-                    ? suggestedCourse.price + "تومان"
+                  {course.price
+                    ? course.price + "تومان"
                     : "رایگانـ"}
                 </span>
               </div>
