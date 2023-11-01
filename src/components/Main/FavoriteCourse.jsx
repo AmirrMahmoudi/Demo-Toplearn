@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CourseItem = () => {
+const FavoriteCourse = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const CourseItem = () => {
     );
 };
 
-export default CourseItem;
+export default FavoriteCourse;

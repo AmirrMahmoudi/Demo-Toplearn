@@ -120,12 +120,17 @@ span.title {
 }
 
 /** MAIN  */
-.headBannerImg {
-  width: 40px;
-  height: 40px;
-}
+/* .headBannerImg {
+    width: 40px;
+    height: 40px;
+} */
 
-.last-courses-layer header {
+.img-banner {
+  width: 100% !important;
+  height: auto;
+  border-radius: 5px;
+}
+.last-courses-layer  {
   padding: 70px 0 30px;
 }
 .carousel-item img {
@@ -134,7 +139,7 @@ span.title {
   vertical-align: middle;
 }
 
-#main-menu > ul > li > a {
+/* #main-menu > ul > li > a {
   display: flex;
   font-size: 15px;
   line-height: 30px;
@@ -200,8 +205,9 @@ a {
 
 #fa-circle {
   font-size: 5px !important;
-}
+} */
 
+/** Swiper */
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: auto !important;
@@ -214,12 +220,6 @@ a {
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
-}
-
-.img-banner {
-  width: 100% !important;
-  height: auto;
-  border-radius: 5px;
 }
 
 .headline h2 {
@@ -261,4 +261,119 @@ a {
   .col-xs-6 {
     width: 50% !important;
   }
+}
+
+/** CARD */
+.card-title-style {
+  line-height: 40px !important ;
+  height: 40px !important ;
+  font-size: 14px !important ;
+  color: #1e2f38 !important ;
+  overflow: hidden !important ;
+  text-overflow: ellipsis !important ;
+  white-space: nowrap !important ;
+  display: block !important ;
+  text-decoration: none !important ;
+}
+.card-detail {
+  width: auto !important ;
+  display: inline-table !important ;
+  white-space: nowrap !important ;
+  font-size: 13px !important ;
+  color: #778286 !important ;
+  line-height: 25px !important ;
+  /* padding-left: 20px !important ; */
+  /* border-bottom: 1px solid black; */
+}
+.card-icon {
+  font-size: 17px;
+  color: #d2dbdf;
+}
+
+.card-detail:hover {
+  color: #6fc341 !important;
+}
+.text-price {
+  color: #6fc341;
+}
+
+.text-time {
+  color: #00b3e9;
+}
+
+.box-shadow {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-shadow::before {
+  width: 70px;
+  height: 70px;
+  background: url("../../src/assets/circle-bg.svg") no-repeat left bottom;
+  position: absolute;
+  content: "";
+  left: -1px;
+  bottom: 61px;
+}
+/** Blogs */
+.suggested-courses-layer {
+  padding: 20px 0 70px;
+}
+
+.article-col {
+  border-radius: 10px;
+}
+.last-articles-layer {
+  width: 100%;
+  padding: 85px 0 60px;
+  position: relative;
+  background: url("https://toplearn.com/site/images/article-pattern.png") repeat
+    0 0 #f6f9fa;
+}
+.article-col img {
+  width: 100%;
+  display: block;
+  height: 220px !important;
+}
+.article-title{
+    padding: 11px 15px 2px;
+    position: relative;
+    z-index: 10;
+}
+.article-title-h2 {
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #1e2f38;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  font-weight: bold;
+}
+.article-top p {
+  font-size: 13px;
+}
+
+.article-bottom {
+  font-size: 14px;
+}
+.article-bottom .left i,
+span {
+  font-size: 14px;
+}
+.article-text {
+  color: #686e71;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: justify;
+  margin: 0;
+  padding: 0 15px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.hoverGreen:hover > * {
+  color: #6fc341 !important;
 }
